@@ -2,8 +2,8 @@
 import os
 import sys
 
-ORIG_DIR = os.path.join(os.path.realpath(__file__), 'language')
-NEW_DIR = os.path.join(os.path.realpath(__file__), 'fuzzing')
+ORIG_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'language')
+NEW_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'fuzzing')
 
 def minimize(data):
   lines = data.splitlines()
