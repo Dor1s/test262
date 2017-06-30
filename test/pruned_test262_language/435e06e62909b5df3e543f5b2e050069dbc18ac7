@@ -1,0 +1,4 @@
+function f() {
+    return typeof this;
+}
+assert.sameValue(f(), "undefined", 'f()');

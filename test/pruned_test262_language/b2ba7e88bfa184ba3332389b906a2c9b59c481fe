@@ -1,0 +1,3 @@
+assert.throws(ReferenceError, function() {
+  e-1
+});

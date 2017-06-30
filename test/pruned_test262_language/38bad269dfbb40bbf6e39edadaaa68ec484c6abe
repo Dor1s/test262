@@ -1,0 +1,7 @@
+var x;
+assert.throws(TypeError, function() {
+  for (x of false) {}
+});
+assert.throws(TypeError, function() {
+  for (x of 37) {}
+});

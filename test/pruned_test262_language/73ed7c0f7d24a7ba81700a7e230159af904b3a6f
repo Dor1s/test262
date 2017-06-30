@@ -1,0 +1,1 @@
+var protected = 1;

@@ -1,0 +1,5 @@
+assert.throws(TypeError, function() {
+  for (let {} of [null]) {
+    return;
+  }
+});

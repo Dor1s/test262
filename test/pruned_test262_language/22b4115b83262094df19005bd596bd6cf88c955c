@@ -1,0 +1,3 @@
+assert.throws(SyntaxError, function() {
+    eval('eval = 42;');
+});

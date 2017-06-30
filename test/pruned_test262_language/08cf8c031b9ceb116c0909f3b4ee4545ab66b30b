@@ -1,0 +1,7 @@
+var argument, eval;
+var result;
+var vals = [2, 3];
+result = [arguments, eval] = vals;
+assert.sameValue(arguments, 2);
+assert.sameValue(eval, 3);
+assert.sameValue(result, vals);

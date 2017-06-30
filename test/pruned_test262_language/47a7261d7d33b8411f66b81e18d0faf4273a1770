@@ -1,0 +1,2 @@
+var [_, x] = [];
+assert.sameValue(x, undefined);

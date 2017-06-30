@@ -1,0 +1,7 @@
+(function() {
+  function f() { x = 1; }
+  assert.throws(ReferenceError, function() {
+    f();
+  });
+  let x;
+}());

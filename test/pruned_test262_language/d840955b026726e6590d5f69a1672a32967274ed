@@ -1,0 +1,1 @@
+var interface = 1;

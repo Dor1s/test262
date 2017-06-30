@@ -1,0 +1,2 @@
+function fn() { return 'result'; }
+assert.sameValue(`${0} ${1} ${fn()}`, '0 1 result');

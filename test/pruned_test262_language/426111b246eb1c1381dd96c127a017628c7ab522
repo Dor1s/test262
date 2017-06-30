@@ -1,0 +1,2 @@
+if (false) let // ASI
+{}

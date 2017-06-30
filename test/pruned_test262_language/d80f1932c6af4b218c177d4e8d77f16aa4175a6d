@@ -1,0 +1,1 @@
+assert.sameValue(eval('1; switch(null) {}'), undefined);

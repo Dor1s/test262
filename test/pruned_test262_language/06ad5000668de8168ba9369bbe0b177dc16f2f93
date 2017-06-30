@@ -1,0 +1,4 @@
+var af = (x = 1) => x;
+assert.sameValue(typeof af, "function");
+assert.sameValue(af(), 1);
+assert.sameValue(af(2), 2);

@@ -1,0 +1,1 @@
+assert.sameValue(this, undefined);

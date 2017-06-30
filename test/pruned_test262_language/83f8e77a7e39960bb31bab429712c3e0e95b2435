@@ -1,0 +1,2 @@
+function* g() {}
+assert.sameValue(typeof g.prototype, 'object');

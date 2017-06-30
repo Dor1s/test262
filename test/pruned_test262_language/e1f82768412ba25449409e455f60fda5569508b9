@@ -1,0 +1,2 @@
+function f() { "use strict"; return this===undefined;};
+assert(eval("f();"));

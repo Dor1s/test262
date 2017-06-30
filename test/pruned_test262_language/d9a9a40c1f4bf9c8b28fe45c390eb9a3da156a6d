@@ -1,0 +1,1 @@
+assert.sameValue(`${0} ${1} ${`bar ${5} baz`} qux`, '0 1 bar 5 baz qux');

@@ -1,0 +1,10 @@
+try {
+  (function(x) {
+    try {
+      let x = 'inner';
+      throw 0;
+    } finally {
+      assert.sameValue(x, 'outer');
+    }
+  })('outer');
+} catch (e) {}

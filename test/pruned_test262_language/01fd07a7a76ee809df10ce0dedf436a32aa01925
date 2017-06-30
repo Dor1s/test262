@@ -1,0 +1,7 @@
+assert.throws(SyntaxError, function() {
+    var f = Function("\
+                      \'use strict\';  \
+                      var o = {}; \
+                      with (o) {};\
+                    ");
+});

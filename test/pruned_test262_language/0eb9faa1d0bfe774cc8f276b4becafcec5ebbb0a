@@ -1,0 +1,15 @@
+function fn() {
+  var a = 1;
+  try {
+    throw 'stuff3';
+  } catch (a) {
+    {
+      // const declaration shadowing catch parameter
+      const a = 3;
+      assert.sameValue(a, 3);
+    }
+    assert.sameValue(a, 'stuff3');
+  }
+  assert.sameValue(a, 1);
+}
+fn();

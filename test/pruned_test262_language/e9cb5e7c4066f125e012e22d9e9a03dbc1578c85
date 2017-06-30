@@ -1,0 +1,6 @@
+var x = 1;
+assert.sameValue((0,eval)(x), x, 'Reference');
+assert.sameValue((0,eval)(1), 1, 'number');
+assert.sameValue((0,eval)(true), true, 'boolean');
+assert.sameValue((0,eval)(null), null, 'null');
+assert.sameValue((0,eval)(undefined), undefined, 'undefined');

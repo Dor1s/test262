@@ -1,0 +1,7 @@
+var obj = {
+  method() {
+    return super.toString;
+  }
+};
+obj.toString = null;
+assert.sameValue(obj.method(), Object.prototype.toString);

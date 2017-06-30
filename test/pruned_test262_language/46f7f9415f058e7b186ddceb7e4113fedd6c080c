@@ -1,0 +1,2 @@
+var let = 1;
+var object = {let};

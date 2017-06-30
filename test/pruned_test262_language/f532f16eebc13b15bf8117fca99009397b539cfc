@@ -1,0 +1,6 @@
+var obj = {
+  method(yield) {
+    return yield;
+  }
+};
+assert.sameValue(obj.method('arg'), 'arg');

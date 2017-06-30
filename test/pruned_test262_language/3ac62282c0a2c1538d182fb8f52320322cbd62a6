@@ -1,0 +1,1 @@
+assert.sameValue(`NoSubstitutionTemplate`, 'NoSubstitutionTemplate');

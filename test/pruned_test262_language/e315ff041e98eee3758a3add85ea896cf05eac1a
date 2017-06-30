@@ -1,0 +1,1 @@
+assert.throws(TypeError, function() { new (() => {}); });
