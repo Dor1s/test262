@@ -1,0 +1,6 @@
+var yield;
+var result;
+var vals = { yield: 3 };
+result = { yield } = vals;
+assert.sameValue(yield, 3);
+assert.sameValue(result, vals);

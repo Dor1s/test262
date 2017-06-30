@@ -1,0 +1,7 @@
+class WM extends WeakMap {}
+var map = new WM();
+var obj = {};
+assert.sameValue(map.has(obj), false);
+map.set(obj, 42);
+assert.sameValue(map.has(obj), true);
+assert.sameValue(map.get(obj), 42);

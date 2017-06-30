@@ -1,0 +1,1 @@
+export * from './instn-named-star-cycle-indirect-x_FIXTURE.js';

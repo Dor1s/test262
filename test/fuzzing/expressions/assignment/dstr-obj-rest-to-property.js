@@ -1,0 +1,10 @@
+var src = {};
+var result;
+var vals = { x: 1, y: 2};
+result = {...src.y} = vals;
+assert.sameValue(src.y.x, 1);
+assert.sameValue(src.y.y, 2);
+verifyEnumerable(src, "y");
+verifyWritable(src, "y");
+verifyConfigurable(src, "y");
+assert.sameValue(result, vals);

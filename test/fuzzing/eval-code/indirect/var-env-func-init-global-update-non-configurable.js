@@ -1,0 +1,12 @@
+var initial;
+Object.defineProperty(this, 'f', {
+  enumerable: true,
+  writable: true,
+  configurable: false
+});
+(0,eval)('initial = f; function f() { return 2222; }');
+verifyEnumerable(this, 'f');
+verifyWritable(this, 'f');
+verifyNotConfigurable(this, 'f');
+assert.sameValue(typeof initial, 'function');
+assert.sameValue(initial(), 2222);

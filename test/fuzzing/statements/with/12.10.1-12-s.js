@@ -1,0 +1,7 @@
+assert.throws(SyntaxError, function() {
+    eval("\
+          'use strict'; \
+          var o = {}; \
+          with (o) {}\
+        ");
+});

@@ -1,0 +1,5 @@
+assert.throws(TypeError, function() {
+  try {
+    throw [null];
+  } catch ([[x]]) {}
+});

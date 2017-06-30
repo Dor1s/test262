@@ -1,0 +1,7 @@
+var x, y;
+var result;
+var vals = [null];
+result = [...[x, y]] = vals;
+assert.sameValue(x, null);
+assert.sameValue(y, undefined);
+assert.sameValue(result, vals);

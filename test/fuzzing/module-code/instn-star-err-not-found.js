@@ -1,0 +1,1 @@
+import * as ns from './instn-star-err-not-found-faulty_FIXTURE.js';

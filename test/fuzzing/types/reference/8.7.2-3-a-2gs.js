@@ -1,0 +1,4 @@
+assert.throws(Test262Error, function() {
+  throw new Test262Error();
+  b = 11;
+});

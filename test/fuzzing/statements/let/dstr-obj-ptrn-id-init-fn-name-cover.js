@@ -1,0 +1,3 @@
+let { cover = (function () {}), xCover = (0, function() {})  } = {};
+assert.sameValue(cover.name, 'cover');
+assert.notSameValue(xCover.name, 'xCover');

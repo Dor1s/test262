@@ -1,0 +1,7 @@
+class Foo extends null {
+  constructor() {
+  }
+}
+assert.throws(ReferenceError, function() {
+  new C();
+});

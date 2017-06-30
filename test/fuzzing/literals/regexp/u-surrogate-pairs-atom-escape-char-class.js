@@ -1,0 +1,1 @@
+assert(/^\S$/u.test('\ud800\udc00'));

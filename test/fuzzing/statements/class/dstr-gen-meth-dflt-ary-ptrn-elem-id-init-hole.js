@@ -1,0 +1,10 @@
+var callCount = 0;
+class C {
+  *method([x = 23] = [,]) {
+    assert.sameValue(x, 23);
+    // another statement
+    callCount = callCount + 1;
+  }
+};
+new C().method().next();
+assert.sameValue(callCount, 1, 'method invoked exactly once');

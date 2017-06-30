@@ -1,0 +1,1 @@
+assert.sameValue(eval("0 //\u180E"), 0);

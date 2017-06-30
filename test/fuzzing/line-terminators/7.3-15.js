@@ -1,0 +1,4 @@
+        var prop = "a\uFFFFa";
+assert.sameValue(prop.length, 3, 'prop.length');
+assert.notSameValue(prop, "aa", 'prop');
+assert.sameValue(prop[1], "\uFFFF", 'prop[1]');

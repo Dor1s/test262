@@ -1,0 +1,4 @@
+var Base = function() {}.bind();
+assert.throws(TypeError, function() {
+  class C extends Base {}
+});

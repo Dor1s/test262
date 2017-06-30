@@ -1,0 +1,17 @@
+function DummyError() { }
+assert.throws(DummyError, function() {
+  var base = null;
+  var prop = function() {
+    throw new DummyError();
+  };
+  --base[prop()];
+});
+assert.throws(TypeError, function() {
+  var base = null;
+  var prop = {
+    toString: function() {
+      $ERROR("property key evaluated");
+    }
+  };
+  --base[prop];
+});

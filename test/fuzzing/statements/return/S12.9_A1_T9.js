@@ -1,0 +1,6 @@
+throw "Test262: This statement should not be evaluated.";
+try {
+    throw 1;
+} catch(e){
+    return e;
+}

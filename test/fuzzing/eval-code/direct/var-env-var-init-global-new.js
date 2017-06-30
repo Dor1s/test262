@@ -1,0 +1,6 @@
+var initial = null;
+eval('initial = x; var x;');
+verifyEnumerable(this, 'x');
+verifyWritable(this, 'x');
+verifyConfigurable(this, 'x');
+assert.sameValue(initial, undefined);

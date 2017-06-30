@@ -1,0 +1,2 @@
+var obj = { method() {} };
+assert.sameValue(Object.getPrototypeOf(obj.method), Function.prototype);

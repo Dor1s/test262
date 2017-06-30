@@ -1,0 +1,1 @@
+assert.sameValue((0,eval)("var x = 1"), undefined);

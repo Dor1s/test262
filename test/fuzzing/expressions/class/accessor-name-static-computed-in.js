@@ -1,0 +1,12 @@
+var empty = Object.create(null);
+var C, value;
+for (C = class { static get ['x' in empty]() { return 'via get'; } }; ; ) {
+  value = C.false;
+  break;
+}
+assert.sameValue(value, 'via get');
+for (C = class { static set ['x' in empty](param) { value = param; } }; ; ) {
+  C.false = 'via set';
+  break;
+}
+assert.sameValue(value, 'via set');

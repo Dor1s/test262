@@ -1,0 +1,3 @@
+var sym = Symbol();
+assert.sameValue(sym && true, true, "`sym && true` is `true`");
+assert.sameValue(!sym && false, false, "`!sym && false` is `false`");

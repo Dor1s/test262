@@ -1,0 +1,11 @@
+var callCount = 0;
+class C {
+  method() {
+    assert.sameValue(arguments.length, 1);
+    assert.sameValue(arguments[0], 42);
+    callCount = callCount + 1;
+  }
+}
+C.prototype.method(42,);
+var ref = C.prototype.method;
+assert.sameValue(callCount, 1, 'method invoked exactly once');

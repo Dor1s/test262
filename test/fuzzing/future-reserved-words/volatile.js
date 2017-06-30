@@ -1,0 +1,1 @@
+var volatile = 1;

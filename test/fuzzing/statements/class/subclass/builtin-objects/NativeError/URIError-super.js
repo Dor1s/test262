@@ -1,0 +1,6 @@
+class CustomError extends URIError {
+  constructor() {}
+}
+assert.throws(ReferenceError, function() {
+  new CustomError();
+});

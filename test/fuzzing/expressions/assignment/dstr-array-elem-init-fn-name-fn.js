@@ -1,0 +1,10 @@
+var xFn, fn;
+var result;
+var vals = [];
+result = [ xFn = function x() {}, fn = function() {} ] = vals;
+assert(xFn.name !== 'xFn');
+assert.sameValue(fn.name, 'fn');
+verifyNotEnumerable(fn, 'name');
+verifyNotWritable(fn, 'name');
+verifyConfigurable(fn, 'name');
+assert.sameValue(result, vals);

@@ -1,0 +1,15 @@
+var iterable = {};
+var iterator = {
+  next: function() {
+    return { done: true };
+  },
+  return: function() {
+    return null;
+  }
+};
+iterable[Symbol.iterator] = function() {
+  return iterator;
+};
+assert.throws(TypeError, function() {
+  0, [] = iterable;
+});

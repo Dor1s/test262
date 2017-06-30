@@ -1,0 +1,9 @@
+assert.throws(ReferenceError, function() {
+  f;
+});
+{
+  function f() {  }
+}
+assert.throws(ReferenceError, function() {
+  f;
+});

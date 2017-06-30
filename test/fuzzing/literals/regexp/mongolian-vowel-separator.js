@@ -1,0 +1,1 @@
+assert.sameValue(/᠎/.source, "\u180E");

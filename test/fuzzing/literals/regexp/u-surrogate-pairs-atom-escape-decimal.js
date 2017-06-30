@@ -1,0 +1,1 @@
+assert.sameValue(/(.+).*\1/u.test('\ud800\udc00\ud800'), false);

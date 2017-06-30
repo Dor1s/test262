@@ -1,0 +1,4 @@
+assert.throws(ReferenceError, function() {
+  async
+  function foo() {}
+});

@@ -1,0 +1,5 @@
+class S extends Set {}
+var set = new S([{}, {}]);
+assert.sameValue(set.size, 2);
+set.add({});
+assert.sameValue(set.size, 3);

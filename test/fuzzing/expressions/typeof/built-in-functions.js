@@ -1,0 +1,10 @@
+assert.sameValue(
+  typeof Math.exp,
+  "function",
+  '#1: typeof Math.exp!=="function" '+typeof Math.exp
+);
+assert.sameValue(
+  typeof parseInt,
+  "function",
+  '#2: typeof parseInt!=="function" '+typeof parseInt
+);

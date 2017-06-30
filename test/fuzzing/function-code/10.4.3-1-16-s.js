@@ -1,0 +1,2 @@
+var f = new Function("\"use strict\";\nreturn typeof this;");
+assert.sameValue(f(), "undefined", 'f()');

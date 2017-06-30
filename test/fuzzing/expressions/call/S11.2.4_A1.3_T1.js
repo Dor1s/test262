@@ -1,0 +1,4 @@
+throw "Test262: This statement should not be evaluated.";
+function f_arg() {
+}
+f_arg(1,,2);

@@ -1,0 +1,9 @@
+function fn() {
+  {
+    var x = 1;
+    var y;
+  }
+  assert.sameValue(x, 1);
+  assert.sameValue(y, undefined);
+}
+fn();

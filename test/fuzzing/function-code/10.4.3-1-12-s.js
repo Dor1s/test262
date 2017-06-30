@@ -1,0 +1,4 @@
+assert.sameValue((function () {
+    "use strict";
+    return typeof this;
+})(), "undefined");

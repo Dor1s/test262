@@ -1,0 +1,10 @@
+var o = Object.create({ x: 1, y: 2 });
+o.z = 3;
+var x, y, z;
+var result;
+var vals = o;
+result = { x, ...{y , z} } = vals;
+assert.sameValue(x, 1);
+assert.sameValue(y, undefined);
+assert.sameValue(z, 3);
+assert.sameValue(result, vals);

@@ -1,0 +1,8 @@
+var stringSet;
+var C = class {
+  static get 0o10() { return 'get string'; }
+  static set 0o10(param) { stringSet = param; }
+};
+assert.sameValue(C['8'], 'get string');
+C['8'] = 'set string';
+assert.sameValue(stringSet, 'set string');
